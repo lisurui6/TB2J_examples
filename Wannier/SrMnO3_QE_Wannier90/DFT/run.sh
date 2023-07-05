@@ -1,4 +1,4 @@
-mpirun pw.x < SrMnO3_72.scf.pwi  | tee SrMnO3.scf.pwo
+#mpirun pw.x < SrMnO3_72.scf.pwi  | tee SrMnO3.scf.pwo
 mpirun pw.x -pd .true. < SrMnO3_72.nscf.pwi | tee SrMnO3.nscf.pwo
 
 wannier90.x -pp SrMnO3_up
