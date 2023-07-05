@@ -7,7 +7,7 @@ wannier90.x SrMnO3_up
 
 
 wannier90.x -pp SrMnO3_down
-mpirun pw2wannier90.x < SrMnO3_down.pw2wan | tee SrMnO3_down.pw2wan.out
+mpirun pw2wannier90.x -pd .true < SrMnO3_down.pw2wan | tee SrMnO3_down.pw2wan.out
 wannier90.x SrMnO3_down
 
 wann2J.py --posfile SrMnO3_72.scf.pwi --prefix_up=SrMnO3_up --prefix_down=SrMnO3_down --elements=Mn --efermi=10.67 --kmesh 5 5 5
