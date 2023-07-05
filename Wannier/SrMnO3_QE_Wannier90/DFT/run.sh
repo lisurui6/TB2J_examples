@@ -2,7 +2,7 @@
 mpirun pw.x -pd .true. < SrMnO3_72.nscf.pwi | tee SrMnO3.nscf.pwo
 
 wannier90.x -pp SrMnO3_up
-mpirun pw2wannier90.x < SrMnO3_up.pw2wan | tee SrMnO3_up.pw2wan.out
+mpirun pw2wannier90.x -pd .true. < SrMnO3_up.pw2wan | tee SrMnO3_up.pw2wan.out
 wannier90.x SrMnO3_up
 
 
