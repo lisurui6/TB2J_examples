@@ -1,6 +1,6 @@
 # DFT
-mpirun pw.x < FeO.scf.pwi  | tee FeO.scf.pwo
-mpirun pw.x < FeO.nscf.pwi | tee FeO.nscf.pwo
+mpirun pw.x < FeO_72.scf.pwi  | tee FeO.scf.pwo
+mpirun pw.x < FeO_72.nscf.pwi | tee FeO.nscf.pwo
 
 # Wannier for spin up
 wannier90.x -pp FeO_up
